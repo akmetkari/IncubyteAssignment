@@ -1,0 +1,17 @@
+# Ignore all .log files
+*.log
+
+# Ignore specific file
+secret-config.json
+
+# Ignore a folder
+node_modules/
+
+# Ignore everything in a folder except a file
+config/*
+!config/app.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+

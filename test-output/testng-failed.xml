@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test suite dummy]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AccountCreation(failed)">
+    <classes>
+      <class name="framework.testCases.TC_01_CreateAccount">
+        <methods>
+          <include name="initlizeDriver"/>
+          <include name="CreateAccount" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- framework.testCases.TC_01_CreateAccount -->
+    </classes>
+  </test> <!-- AccountCreation(failed) -->
+</suite> <!-- Failed suite [Test suite dummy] -->
