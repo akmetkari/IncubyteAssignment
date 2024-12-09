@@ -15,4 +15,7 @@ config/*
 .DS_Store
 Thumbs.db
 
+<<<<<<< HEAD
 /target/
+=======
+>>>>>>> 7c0b99cb8e2cee1abc3b45e09d07d4f31eb12372
