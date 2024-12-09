@@ -3,12 +3,16 @@
 
 <suite name="Test suite dummy">
 
-  
-  
-  <test name="AccountCreation">
-  <classes>
-  <class name="framework.testCases.TC_01_CreateAccount"></class>
-  </classes>
-  </test>
-  
+	<test name="AccountCreation" >
+		<classes>
+			<class name="framework.testCases.TCCreateAccount01"></class>
+		</classes>
+	</test>
+
+	<test name="loginWithCorrectData">
+		<classes>
+			<class name="framework.testCases.TCSignInWithValid02"></class>
+		</classes>
+	</test>
+	
 </suite> 

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Test suite dummy]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AccountCreation(failed)">
     <classes>
-      <class name="framework.testCases.TC_01_CreateAccount">
+      <class name="framework.testCases.TCCreateAccount01">
         <methods>
-          <include name="initlizeDriver"/>
+          <include name="done"/>
           <include name="CreateAccount" invocation-numbers="0"/>
+          <include name="initlizeDriver"/>
         </methods>
-      </class> <!-- framework.testCases.TC_01_CreateAccount -->
+      </class> <!-- framework.testCases.TCCreateAccount01 -->
     </classes>
   </test> <!-- AccountCreation(failed) -->
 </suite> <!-- Failed suite [Test suite dummy] -->

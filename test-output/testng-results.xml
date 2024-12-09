@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-08T20:58:19 IST" name="Test suite dummy" finished-at="2024-12-08T20:58:30 IST" duration-ms="10328">
+  <suite started-at="2024-12-09T23:26:49 IST" name="Test suite dummy" finished-at="2024-12-09T23:27:14 IST" duration-ms="25135">
     <groups>
     </groups>
-    <test started-at="2024-12-08T20:58:19 IST" name="AccountCreation" finished-at="2024-12-08T20:58:30 IST" duration-ms="10328">
-      <class name="framework.testCases.TC_01_CreateAccount">
-        <test-method is-config="true" signature="initlizeDriver()[pri:0, instance:framework.testCases.TC_01_CreateAccount@563f38c4]" started-at="2024-12-08T20:58:19 IST" name="initlizeDriver" finished-at="2024-12-08T20:58:22 IST" duration-ms="2758" status="PASS">
+    <test started-at="2024-12-09T23:26:49 IST" name="AccountCreation" finished-at="2024-12-09T23:27:02 IST" duration-ms="13658">
+      <class name="framework.testCases.TCCreateAccount01">
+        <test-method is-config="true" signature="initlizeDriver()[pri:0, instance:framework.testCases.TCCreateAccount01@54422e18]" started-at="2024-12-09T23:26:49 IST" name="initlizeDriver" finished-at="2024-12-09T23:26:51 IST" duration-ms="2734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initlizeDriver -->
-        <test-method signature="CreateAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:framework.testCases.TC_01_CreateAccount@563f38c4]" started-at="2024-12-08T20:58:23 IST" name="CreateAccount" data-provider="CreateAccount" finished-at="2024-12-08T20:58:30 IST" duration-ms="6260" status="FAIL">
+        <test-method signature="CreateAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:framework.testCases.TCCreateAccount01@54422e18]" started-at="2024-12-09T23:26:53 IST" name="CreateAccount" data-provider="CreateAccount" finished-at="2024-12-09T23:27:02 IST" duration-ms="9379" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Akshay]]>
+                <![CDATA[My]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Metakari]]>
+                <![CDATA[Name]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[ak512@gmail.com]]>
+                <![CDATA[ak1217@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -39,49 +39,20 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9323ed7a06cb51de0e16d33da702a5dd, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\91797\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62360/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9323ed7a06cb51de0e16d33da702a5dd]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9323ed7a06cb51de0e16d33da702a5dd, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\91797\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62360/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9323ed7a06cb51de0e16d33da702a5dd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at framework.pages.CreateAccountPage.FillSignInInformationDetails(CreateAccountPage.java:46)
-at framework.testCases.TC_01_CreateAccount.CreateAccount(TC_01_CreateAccount.java:28)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at framework.testCases.TCCreateAccount01.CreateAccount(TCCreateAccount01.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,11 +83,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateAccount -->
-      </class> <!-- framework.testCases.TC_01_CreateAccount -->
+        <test-method is-config="true" signature="done()[pri:0, instance:framework.testCases.TCCreateAccount01@54422e18]" started-at="2024-12-09T23:27:02 IST" name="done" finished-at="2024-12-09T23:27:02 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- framework.testCases.TCCreateAccount01 -->
     </test> <!-- AccountCreation -->
+    <test started-at="2024-12-09T23:27:02 IST" name="loginWithCorrectData" finished-at="2024-12-09T23:27:14 IST" duration-ms="11407">
+      <class name="framework.testCases.TCSignInWithValid02">
+        <test-method is-config="true" signature="initlizeDriver()[pri:0, instance:framework.testCases.TCSignInWithValid02@cecf639]" started-at="2024-12-09T23:27:02 IST" name="initlizeDriver" finished-at="2024-12-09T23:27:04 IST" duration-ms="1605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initlizeDriver -->
+        <test-method signature="signInWithCorrect(java.lang.String,java.lang.String)[pri:0, instance:framework.testCases.TCSignInWithValid02@cecf639]" started-at="2024-12-09T23:27:04 IST" name="signInWithCorrect" data-provider="LoginWithCorrect" finished-at="2024-12-09T23:27:13 IST" duration-ms="9551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ak1217@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Heoo12334]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInWithCorrect -->
+        <test-method is-config="true" signature="done()[pri:0, instance:framework.testCases.TCSignInWithValid02@cecf639]" started-at="2024-12-09T23:27:13 IST" name="done" finished-at="2024-12-09T23:27:14 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- framework.testCases.TCSignInWithValid02 -->
+    </test> <!-- loginWithCorrectData -->
   </suite> <!-- Test suite dummy -->
 </testng-results>

@@ -9,36 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Test suite dummy</th></tr>
-<tr><td><a href="#t0">AccountCreation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,328</td><td></td><td></td></tr>
+<tr><td><a href="#t0">AccountCreation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,658</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">loginWithCorrectData</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,407</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">25,065</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test suite dummy</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AccountCreation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.testCases.TC_01_CreateAccount</td><td><a href="#m0">CreateAccount</a></td><td rowspan="1">1733671703743</td><td rowspan="1">6260</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test suite dummy</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AccountCreation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.testCases.TCCreateAccount01</td><td><a href="#m0">CreateAccount</a></td><td rowspan="1">1733767013033</td><td rowspan="1">9379</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">loginWithCorrectData &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">framework.testCases.TCSignInWithValid02</td><td><a href="#m1">signInWithCorrect</a></td><td rowspan="1">1733767024399</td><td rowspan="1">9551</td></tr></tbody>
 </table>
-<h2>AccountCreation</h2><h3 id="m0">framework.testCases.TC_01_CreateAccount#CreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Akshay</td><td>Metakari</td><td>ak512@gmail.com</td><td>Heoo12334</td><td>Heoo12334</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9323ed7a06cb51de0e16d33da702a5dd, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\91797\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62360/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9323ed7a06cb51de0e16d33da702a5dd
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at framework.pages.CreateAccountPage.FillSignInInformationDetails(CreateAccountPage.java:46)
-	at framework.testCases.TC_01_CreateAccount.CreateAccount(TC_01_CreateAccount.java:28)
+<h2>AccountCreation</h2><h3 id="m0">framework.testCases.TCCreateAccount01#CreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>My</td><td>Name</td><td>ak1217@gmail.com</td><td>Heoo12334</td><td>Heoo12334</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at framework.testCases.TCCreateAccount01.CreateAccount(TCCreateAccount01.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>loginWithCorrectData</h2><h3 id="m1">framework.testCases.TCSignInWithValid02#signInWithCorrect</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>ak1217@gmail.com</td><td>Heoo12334</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

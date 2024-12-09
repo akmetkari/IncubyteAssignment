@@ -10,6 +10,7 @@ public class LandingPage
 {
 	WebDriver driver;
 	CreateAccountPage createAccountPage;
+	SignInPage signInPage;
 	public LandingPage(WebDriver driver)
 	{
 		this.driver = driver;
@@ -28,5 +29,11 @@ public class LandingPage
 	
 	@FindBy(xpath = "//div[@class='header content']/preceding::a[contains(text(),'Sign In')]")
 	WebElement signInLink;
+	
+	public SignInPage moveToSignPage() {
+		signInLink.click();
+		signInPage = new SignInPage(driver);
+		return signInPage;
+	}
 	
 }

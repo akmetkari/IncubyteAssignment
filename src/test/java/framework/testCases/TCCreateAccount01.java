@@ -7,14 +7,15 @@ import org.testng.annotations.Test;
 import framework.dataProvider.DataProviders;
 import framework.pages.CreateAccountPage;
 import framework.pages.LandingPage;
+import framework.pages.MyAccountsPage;
 import framwork.base.BaseClass;
 
-public class TC_01_CreateAccount extends BaseClass 
+public class TCCreateAccount01 extends BaseClass 
 {
 	WebDriver driver;
 	LandingPage landingPage;
 	CreateAccountPage createAccountPage;
-	
+	MyAccountsPage myAccountspage;
 	
 	@Test(dataProvider = "CreateAccount", dataProviderClass = DataProviders.class) 
 	public void CreateAccount(String firstName,String lastName,String email,String password,String confirmPassword)
@@ -24,9 +25,14 @@ public class TC_01_CreateAccount extends BaseClass
 		
 		Assert.assertTrue(createAccountPage.isAt(), "User is not on the create account page");
 		
-		createAccountPage.FillPersonalDetails(firstName,lastName);
-		createAccountPage.FillSignInInformationDetails(email,password,confirmPassword);
+		createAccountPage.fillPersonalDetails(firstName,lastName);
+		myAccountspage = createAccountPage.fillSignInInformationDetails(email,password,confirmPassword);
+		
+		Assert.assertEquals(myAccountspage.isAt(), true);
 	}
+	
+	
+	
 	
 	
 }

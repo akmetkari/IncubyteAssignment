@@ -3,8 +3,8 @@ package framwork.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
 import framework.dataProvider.ConfigReader;
 import framework.pages.LandingPage;
@@ -39,5 +39,10 @@ public class BaseClass
 	}
 	
 	
+	@AfterTest
+	public void done()
+	{
+		driver.close();
+	}
 	
 }
